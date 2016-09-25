@@ -53,21 +53,21 @@ if ~isempty(s),
 % boundary segment 1
 ii=find(bs==1);
 if length(ii)
-x(ii)=(12-(0))*(s(ii)-d(1,1))/(d(2,1)-d(1,1))+(0);
+x(ii)=(7-(0))*(s(ii)-d(1,1))/(d(2,1)-d(1,1))+(0);
 y(ii)=(0.01-(0.01))*(s(ii)-d(1,1))/(d(2,1)-d(1,1))+(0.01);
 end
 
 % boundary segment 2
 ii=find(bs==2);
 if length(ii)
-x(ii)=(12-(12))*(s(ii)-d(1,2))/(d(2,2)-d(1,2))+(12);
+x(ii)=(7-(7))*(s(ii)-d(1,2))/(d(2,2)-d(1,2))+(7);
 y(ii)=(-0.01-(0.01))*(s(ii)-d(1,2))/(d(2,2)-d(1,2))+(0.01);
 end
 
 % boundary segment 3
 ii=find(bs==3);
 if length(ii)
-x(ii)=(0-(12))*(s(ii)-d(1,3))/(d(2,3)-d(1,3))+(12);
+x(ii)=(0-(7))*(s(ii)-d(1,3))/(d(2,3)-d(1,3))+(7);
 y(ii)=(-0.01-(-0.01))*(s(ii)-d(1,3))/(d(2,3)-d(1,3))+(-0.01);
 end
 
