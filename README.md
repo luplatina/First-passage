@@ -8,4 +8,6 @@ For example, the probability package can plot the time evolution of a probabilit
 
 ![probability](https://cloud.githubusercontent.com/assets/19654472/18856826/6bd14530-842c-11e6-9b11-b6c83643ece0.png)
 
-And the probability flux package can predict the first passage time distribution for a random walker escaping from an energy well. Usually should be exponential shape.  
+And the probability flux package can predict the first passage time distribution for a random walker escaping from an energy well. Usually it should be exponential shape.  
+
+![probability_flux](https://cloud.githubusercontent.com/assets/19654472/18859488/86bdcf2e-8442-11e6-82a9-b277a7686a57.png)
