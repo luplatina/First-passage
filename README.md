@@ -8,7 +8,7 @@ This code implement the first passage calculation by solving the Smoluchowski eq
 The pobability function and probablity flux function are the most useful output parameters from this model.
 Detail instruction and relevant mathematic derivation can be found in the file "instruction of First passage calculation in matlab.pdf"
 
-In the probability flux function folder:
+* In the probability flux function folder:
 
 drawgeom_ref.m, prob1g.m are code to Draw the PDE geometry and design boundary condition based on the “PDE tool”.
 
@@ -18,7 +18,7 @@ Rightpass.m is the code to calculate the probability flux function depend on the
 
 probablityflux_xa generate the escape time probability/first passage time probability.
 
-In the probability flux function folder:
+* In the probability flux function folder:
 
 drawgeom_ref.m, prob1g.m are code to Draw the PDE geometry and design boundary condition based on the “PDE tool”.
 
@@ -87,6 +87,7 @@ u is the probability flux function depend on the time(tlist) and initial positio
 4.Plot the escape time distribution.
 
 `>> yprob=probabilityflux_xa(p,u,tlist,Ldomain, xinit); %default value: xinit=1; assume an initial position for the random walker`
+
 `>>plot(tlist,yprob); %escape time probability/first passage time probability;`
 
 ![probability_flux](https://cloud.githubusercontent.com/assets/19654472/18859488/86bdcf2e-8442-11e6-82a9-b277a7686a57.png)
