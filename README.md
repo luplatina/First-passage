@@ -37,7 +37,6 @@ set the diffusion constant (Diff), Duration to observe the evolution process(Tdo
 4.	Plot the probability evolution curves:
 `>>[y1b, xdomain]=Time_evolution(u,p,tlist,Tdomain);`
 
-
 ![probability](https://cloud.githubusercontent.com/assets/19654472/18856826/6bd14530-842c-11e6-9b11-b6c83643ece0.png)
 
 And the probability flux package can predict the first passage time distribution for a random walker escaping from an energy well. Usually it should be exponential shape.  
