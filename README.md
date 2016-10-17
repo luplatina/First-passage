@@ -12,17 +12,17 @@ Detail instruction and relevant mathematic derivation can be found in the file "
 
 drawgeom_ref.m, prob1g.m are code to Draw the PDE geometry and design boundary condition based on the “PDE tool”.
 
-intFFR is a function associating the calculation of external pontential.
+intFFR.m is a function associating the calculation of external pontential.
 
 Rightpass.m is the code to calculate the probability flux function depend on the time and initial position of random walker.
 
-probablityflux_xa generate the escape time probability/first passage time probability.
+probablityflux_xa.m generate the escape time probability/first passage time probability.
 
 * In the probability flux function folder:
 
 drawgeom_ref.m, prob1g.m are code to Draw the PDE geometry and design boundary condition based on the “PDE tool”.
 
-intFFR is a function associating the calculation of external pontential.
+intFFR.m is a function associating the calculation of external pontential.
 
 afun.m, cfun.m, dfun.m, qfun are functions associating the boundary condition calculation.
 
@@ -30,7 +30,7 @@ Rightpass.m is the code to calculate the probability function depend on the time
 
 Time_evolution.m plots the time-evolving probability distribution. 
 
-##EXAMPLE
+##EXAMPLES
 
 * The probability package can plot the time evolution of a probability function with an external force field pulling towards a reflecting boundary.
 
