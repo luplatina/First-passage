@@ -9,16 +9,25 @@ The pobability function and probablity flux function are the most useful output 
 Detail instruction and relevant mathematic derivation can be found in the file "instruction of First passage calculation in matlab.pdf"
 
 In the probability flux function folder:
+
 drawgeom_ref.m, prob1g.m are code to Draw the PDE geometry and design boundary condition based on the “PDE tool”.
+
 intFFR is a function associating the calculation of external pontential.
+
 Rightpass.m is the code to calculate the probability flux function depend on the time and initial position of random walker.
+
 probablityflux_xa generate the escape time probability/first passage time probability.
 
 In the probability flux function folder:
+
 drawgeom_ref.m, prob1g.m are code to Draw the PDE geometry and design boundary condition based on the “PDE tool”.
+
 intFFR is a function associating the calculation of external pontential.
+
 afun.m, cfun.m, dfun.m, qfun are functions associating the boundary condition calculation.
+
 Rightpass.m is the code to calculate the probability function depend on the time and initial position of random walker.
+
 Time_evolution.m plots the time-evolving probability distribution. 
 
 ##EXAMPLE
@@ -27,11 +36,11 @@ For example, the probability package can plot the time evolution of a probabilit
 
 General procedure:
 
-1.	Draw the PDE geometry and design boundary condition based on the “PDE tool”. 
+1.Draw the PDE geometry and design boundary condition based on the “PDE tool”. 
 
 `>>drawgeomright1(Ldomain, qfun(force)); %default value: Ldomain=7;walk domain; force=1.8;the potential profile;`
 
-2.	Output the boundary parameter from the PDE toolbox to get the parameter ‘b’ and ‘g’. 
+2.Output the boundary parameter from the PDE toolbox to get the parameter ‘b’ and ‘g’. 
 
 First, GUI-->boundary-->export decomposed geometry, boundary condition. 
 
@@ -39,13 +48,13 @@ Then,
 
 `>>fid = wgeom(g, 'prob1g'); #save the geometry file for PDE solver`
 
-3.	Build and solve the PDE
+3.Build and solve the PDE
 
 set the diffusion constant (Diff), Duration to observe the evolution process(Tdomain)
 
 `>>[u p tlist]=Rightpass(b,Diff,force,Ldomain,Tdomain); %default value:Diff=6;Tdomain=2e-8;`
 
-4.	Plot the probability evolution curves:
+4.Plot the probability evolution curves:
 
 `>>[y1b, xdomain]=Time_evolution(u,p,tlist,Tdomain);`
 
@@ -55,11 +64,11 @@ And the probability flux package can predict the first passage time distribution
 
 General procedure:
 
-1.	Draw the PDE geometry and design boundary condition based on the “PDE tool”,   
+1.Draw the PDE geometry and design boundary condition based on the “PDE tool”,   
 
 `>>drawgeom_ref(Ldomain).m  %default value: Ldomain=7;`
 
-2.	Output the boundary parameter from the PDE toolbox to get the parameter ‘b’ and ‘g’. 
+2.Output the boundary parameter from the PDE toolbox to get the parameter ‘b’ and ‘g’. 
 
 First, GUI-->boundary-->export decomposed geometry, boundary condition. 
 
@@ -67,7 +76,7 @@ Then,
 
 `>>fid = wgeom(g, 'prob1g'); #save the geometry file for PDE solver`
 
-3.	Build and solve the PDE. 
+3.Build and solve the PDE. 
 
 set the diffusion constant (Diff), energy well for escape (force), Duration to observe the escape process(Tau)
 
@@ -75,7 +84,7 @@ set the diffusion constant (Diff), energy well for escape (force), Duration to o
 
 u is the probability flux function depend on the time(tlist) and initial position of random walker(p); 
 
-4.	Plot the escape time distribution.
+4.Plot the escape time distribution.
 
 `>> yprob=probabilityflux_xa(p,u,tlist,Ldomain, xinit); %default value: xinit=1; assume an initial position for the random walker`
 `>>plot(tlist,yprob); %escape time probability/first passage time probability;`
