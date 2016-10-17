@@ -66,7 +66,7 @@ General procedure:
 
 1.Draw the PDE geometry and design boundary condition based on the “PDE tool”,   
 
-`>>drawgeom_ref(Ldomain).m  %default value: Ldomain=7;`
+`>>drawgeom_ref(Ldomain)  %default value: Ldomain=7;`
 
 2.Output the boundary parameter from the PDE toolbox to get the parameter ‘b’ and ‘g’. 
 
