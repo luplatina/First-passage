@@ -5,7 +5,7 @@ In general, a first passage time is, in a stochastic system, the time taken for 
 
 ##EXPLANATION OF FILES
 This code implement the first passage calculation by solving the Smoluchowski equation in matlab PDE toolbox.
-The pobability function and probablity flux function are the most useful output parameters from this model.
+The probability function and probablity flux function are the most useful output parameters from this model.
 Detail instruction and relevant mathematic derivation can be found in the file "instruction of First passage calculation in matlab.pdf"
 
 * In the probability flux function folder:
@@ -16,9 +16,9 @@ intFFR.m is a function associating the calculation of external pontential.
 
 Rightpass.m is the code to calculate the probability flux function depend on the time and initial position of random walker.
 
-probablityflux_xa.m generate the escape time probability/first passage time probability.
+probablityflux_xa.m generates the escape time probability/first passage time probability.
 
-* In the probability flux function folder:
+* In the probability function folder:
 
 drawgeom_ref.m, prob1g.m are code to Draw the PDE geometry and design boundary condition based on the “PDE tool”.
 
@@ -50,7 +50,7 @@ Then,
 
 3.Build and solve the PDE
 
-set the diffusion constant (Diff), Duration to observe the evolution process(Tdomain)
+Set the diffusion constant (Diff); Duration to observe the evolution process(Tdomain)
 
 `>>[u p tlist]=Rightpass(b,Diff,force,Ldomain,Tdomain); %default value:Diff=6;Tdomain=2e-8;`
 
@@ -78,7 +78,7 @@ Then,
 
 3.Build and solve the PDE. 
 
-set the diffusion constant (Diff), energy well for escape (force), Duration to observe the escape process(Tau)
+Set the diffusion constant (Diff), energy well for escape (force), Duration to observe the escape process(Tau)
 
 `>>[u p tlist]=Rightpass(b,Diff,force,Ldomain,Tau); %default value:Diff=6;force=0.4;Tau=3e-3;`
 
