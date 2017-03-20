@@ -1,9 +1,10 @@
 # First-passage
 use Matlab PDE toolbox to solve First passage problem numerically.
-##INTRODUCTION
+
+## INTRODUCTION
 In general, a first passage time is, in a stochastic system, the time taken for a state variable to reach a certain value. The way I try to understand it is: A time-dependent stochastic process can be discribed by a probablity function. And the flux of such probablity function at certain boundary can be modeled as a First passage time problem. I try to acheive a model that can predict a random walker's probablity to reach certain position and probablity flux to pass certain boundary at a given time, with considering walker's own diffusion capability and external field. This model has been successfully applied in my study of [DNA thermal motion in nanopore](http://www.sciencedirect.com/science/article/pii/S0006349515008541), published on Biophysical Journal 2015. It solves a fundamental problem about nanopore sequencing accuracy limited by DNA position fluctuation, which has challenged the nanopore sequencing community for years.  This publication was highlighted as [“NEW and NOTABLE”](http://www.cell.com/biophysj/abstract/S0006-3495(15)01006-1) research in 2015 Biophysical Journal.
 
-##EXPLANATION OF FILES
+## EXPLANATION OF FILES
 This code implement the first passage calculation by solving the Smoluchowski equation in matlab PDE toolbox.
 The probability function and probablity flux function are the most useful output parameters from this model.
 Detail instruction and relevant mathematic derivation can be found in the file "instruction of First passage calculation in matlab.pdf"
@@ -30,7 +31,7 @@ Rightpass.m is the code to calculate the probability function depend on the time
 
 Time_evolution.m plots the time-evolving probability distribution. 
 
-##EXAMPLES
+## EXAMPLES
 
 * The probability package can plot the time evolution of a probability function with an external force field pulling towards a reflecting boundary.
 
